@@ -2,19 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="./favicon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!-- <meta name="theme-color" content="#000000" /> -->
+    <meta name="description" content="Archilyas.com" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script src="../src/gsap/gsap.animate.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8a349f80db.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha384-GWpeQQCx59oy0AZxNeVcLrX+Nqpg3dhEoBT/ynclm8lAsrgtZfh/GqUAEuOG1gYA"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../src/gsap/gsap.animate.js"></script>
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,7 +44,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Archilyas | Professional interior designer, architect</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +59,37 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <button id="topBtn"><i class="fa-solid fa-arrow-up"></i></button>
+    <script>
+      //scroll to top button animation
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $("#topBtn").fadeIn();
+          } else {
+            $("#topBtn").fadeOut();
+          }
+        });
+
+        $("#topBtn").click(function () {
+          $("html,body").animate({ scrollTop: 0 }, 400);
+        });
+      });
+
+      // /* scroll down navbar animation */
+      // window.onscroll = function () {
+      //   scrollFunction();
+      // };
+
+      // function scrollFunction() {
+      //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      //     document.getElementById("navbar").style.top = "0";
+      //   } else {
+      //     document.getElementById("navbar").style.top = "-100px";
+      //   }
+      // }
+
+      const toggleMenuOpen = () => document.body.classList.toggle("open");
+    </script>
   </body>
 </html>
