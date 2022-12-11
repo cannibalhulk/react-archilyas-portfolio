@@ -11,7 +11,6 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <script src="../src/gsap/gsap.animate.js"></script>
     <script
       src="https://kit.fontawesome.com/8a349f80db.js"
       crossorigin="anonymous"
@@ -29,17 +28,23 @@
       rel="stylesheet"
     />
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
-      integrity="sha384-GWpeQQCx59oy0AZxNeVcLrX+Nqpg3dhEoBT/ynclm8lAsrgtZfh/GqUAEuOG1gYA"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha384-GWpeQQCx59oy0AZxNeVcLrX+Nqpg3dhEoBT/ynclm8lAsrgtZfh/GqUAEuOG1gYA"
+    crossorigin="anonymous"
+    ></script>
+    
     <script src="../src/gsap/gsap.animate.js"></script>
-
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
-
+      
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
@@ -52,15 +57,22 @@
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
-
+      
       You can add webfonts, meta tags, or analytics to this file.
       The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        
+        To begin the development, run `npm start` or `yarn start`.
+        To create a production bundle, use `npm run build` or `yarn build`.
+      -->
     <button id="topBtn"><i class="fa-solid fa-arrow-up"></i></button>
     <script>
+      
+      import gsap from 'gsap';
+      
+      gsap.from(".logo", { y: -200, opacity: 0, duration: 1 });
+      gsap.from(".p-1", { opacity: 0, delay: 1 });
+      gsap.from(".p-2", { opacity: 0, delay: 2 });
+      gsap.from(".p-3", { opacity: 0, delay: 3 });
       //scroll to top button animation
       $(document).ready(function () {
         $(window).scroll(function () {
@@ -70,26 +82,25 @@
             $("#topBtn").fadeOut();
           }
         });
-
+        
         $("#topBtn").click(function () {
           $("html,body").animate({ scrollTop: 0 }, 400);
         });
       });
-
+      
       // /* scroll down navbar animation */
       // window.onscroll = function () {
-      //   scrollFunction();
-      // };
-
-      // function scrollFunction() {
-      //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      //     document.getElementById("navbar").style.top = "0";
-      //   } else {
-      //     document.getElementById("navbar").style.top = "-100px";
-      //   }
-      // }
-
-      const toggleMenuOpen = () => document.body.classList.toggle("open");
+        //   scrollFunction();
+        // };
+        
+        // function scrollFunction() {
+          //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            //     document.getElementById("navbar").style.top = "0";
+            //   } else {
+              //     document.getElementById("navbar").style.top = "-100px";
+              //   }
+              // }
+              
     </script>
   </body>
-</html>
+  </html>
