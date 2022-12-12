@@ -1,3 +1,4 @@
+import {MantineProvider} from '@mantine/core'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './components/Home'
 // import Navbar from './components/Navbar'
@@ -9,14 +10,16 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route  path="/" element={<Home/>} exact /> 
-        <Route  path="/layiheler" element={<Projects/>}/> 
-        <Route  path="/layiheler/:slug" element={<ProjectSingle/>}/> 
-        <Route  path="/elaqe" element={<Contact/>}/> 
-      </Routes>
-    </BrowserRouter>
+    <MantineProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route  path="/" element={<Home/>} exact /> 
+          <Route  path="/layiheler" element={<Projects/>}/> 
+          <Route  path="/layiheler/:slug" element={<ProjectSingle/>}/> 
+          <Route  path="/elaqe" element={<Contact/>}/> 
+        </Routes>
+      </BrowserRouter>
+    </MantineProvider>
   );
 }
 
