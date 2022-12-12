@@ -27,7 +27,7 @@ export default function Footer(){
                         <Link to="/blog">
                             <a><li>Blog</li></a>
                         </Link>
-                        <Link to="elaqe">
+                        <Link to="/elaqe">
                             <a><li>Əlaqə</li></a>
                         </Link>
                     </ul>
