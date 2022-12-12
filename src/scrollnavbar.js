@@ -11,5 +11,5 @@ window.onscroll = function () {
     }
   }
 
-const toggleMenuOpen = () => document.body.classList.toggle("open");
+// const toggleMenuOpen = () => document.body.classList.toggle("open");
   
