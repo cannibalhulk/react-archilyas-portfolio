@@ -9,7 +9,7 @@ export default function Footer(){
                     <img src={require("../archilyas-logo.png")} alt="logo"/>
                     <div className="socials">
                         <a><i className="fa-brands fa-square-behance"></i></a>
-                        <a href="https://www.instagram.com/ilyas_mmmdli/"><i className="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/ilysmmdli/"><i className="fa-brands fa-instagram"></i></a>
                         <a><i className="fa-brands fa-square-facebook"></i></a>
                     </div>
                 </div>
