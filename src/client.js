@@ -1,6 +1,6 @@
-import sanityClient from 'sanity/cli'
+import {defineConfig} from '@sanity/client'
 
-export default sanityClient({
+export default defineConfig({
   api: {
     projectId: 'wt0rn5to',
     dataset: 'production'
