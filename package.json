@@ -8,6 +8,7 @@
     "@mantine/core": "^5.9.4",
     "@mantine/hooks": "^5.9.4",
     "@sanity/cli": "^3.0.6",
+    "@sanity/client": "^3.4.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
