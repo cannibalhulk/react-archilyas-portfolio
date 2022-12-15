@@ -5,22 +5,23 @@ import "../Blog.css";
 
 export default function Blog() {
   const [blogData, setBlog] = useState(null);
-
+  let PROJECT_ID = "wt0rn5to";
+  let DATASET = "production";
+  let QUERY = encodeURIComponent(`*[_type == "post"]{
+    title,
+    slug,
+    mainImage{
+        asset->{
+            _id,
+            url
+        },
+        alt
+    }
+}`);  
+let PROJECT_URL = `https://${PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${QUERY}`;
   useEffect(() => {
     defineConfig
-      .fetch(
-        `*[_type == "post"]{
-            title,
-            slug,
-            mainImage{
-                asset->{
-                    _id,
-                    url
-                },
-                alt
-            }
-        }`
-      )
+      .fetch(PROJECT_URL)
       .then((data) => setBlog(data))
       .catch(console.error);
   }, []);
