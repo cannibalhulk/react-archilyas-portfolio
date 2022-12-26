@@ -1,7 +1,7 @@
 import {MantineProvider} from '@mantine/core'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './components/Home'
-// import Blog from './components/Blog.js'
+import Blog from './components/Blog.js'
 import Projects from './components/Projects'
 import ProjectSingle from './components/ProjectSingle'
 import Contact from './components/Contact'
@@ -16,7 +16,7 @@ function App() {
           <Route  path="/layiheler" element={<Projects/>}/> 
           <Route  path="/layiheler/:slug" element={<ProjectSingle/>}/> 
           <Route  path="/elaqe" element={<Contact/>}/>
-          {/* <Route  path="/blog" element={<Blog/>} /> */}
+          <Route  path="/blog" element={<Blog/>} />
         </Routes>
       </BrowserRouter>
     </MantineProvider>
