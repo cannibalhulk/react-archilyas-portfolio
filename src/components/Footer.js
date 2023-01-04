@@ -15,7 +15,7 @@ export default function Footer(){
                 </div>
                 <div className="terms">
                     <ul>
-                        <Link to="/#anaSehife">
+                        <Link to="/">
                             <a><li>Ana Səhifə</li></a>
                         </Link>
                         <Link to="/#haqqimda">
