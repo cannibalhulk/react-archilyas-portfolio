@@ -1,8 +1,6 @@
-import {defineConfig} from '@sanity/client'
+import {sanityClient} from '@sanity/client'
 
-export default defineConfig({
-  api: {
+export default sanityClient({
     projectId: 'wt0rn5to',
     dataset: 'production'
-  }
 })

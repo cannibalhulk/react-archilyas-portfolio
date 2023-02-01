@@ -219,3 +219,8 @@ body {
   .navbar-menu > button.active {
     color: inherit;
   }
+
+  section{
+    /* display: flex; */
+    text-align: center;
+  }

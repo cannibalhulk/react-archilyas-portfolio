@@ -1,4 +1,3 @@
-import defineConfig from "../client.js";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../Blog.css";
@@ -18,12 +17,12 @@ export default function Blog() {
         alt
     }
 }`);  
-let PROJECT_URL = `https://${PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${QUERY}`;
+let PROJECT_URL = `https://wt0rn5to.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20%22post%22%5D%7B%0A%20%20%20%20title%2C%0A%20%20%20%20slug%2C%0A%20%20%20%20mainImage%7B%0A%20%20%20%20%20%20%20%20asset-%3E%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20_id%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20url%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20alt%0A%20%20%20%20%7D%0A%7D`;
   useEffect(() => {
-    defineConfig
-      .fetch(PROJECT_URL)
+    fetch(PROJECT_URL)
       .then((data) => setBlog(data))
       .catch(console.error);
+      console.log(blogData)
   }, []);
 
   return (
