@@ -177,7 +177,7 @@ body {
   
   .navbar-menu {
     position: fixed;
-    z-index: 3;
+    z-index: 10000;
     top: 0;
     left: 0;
     translate: -100% 0;
