@@ -228,7 +228,9 @@ export default function Project() {
           <Carousel.Slide>
             <img src={require("../images/sifarisler-interyer-2/hazir-render1.jpg")} alt="img" />
           </Carousel.Slide>
-          {/* ...other slides */}
+          <Carousel.Slide>
+            <img src={require("../images/sifarisler-interyer-2/haziriliq 2.jpg")} alt="img" />
+          </Carousel.Slide>
         </Carousel>
         <br/>
         <br/>
