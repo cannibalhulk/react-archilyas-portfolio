@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import "../Contact.css";
+import { motion } from 'framer-motion';
 
 export default function Contact() {
   return (
@@ -62,7 +63,11 @@ export default function Contact() {
           </Link>
         </nav>
       </nav>
-      <main>
+      <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.7 }}>
         <section className="form-section">
           <div className="wrapper">
             <h2>
@@ -126,7 +131,7 @@ export default function Contact() {
         <button id="topBtn">
           <i className="fa-solid fa-arrow-up"></i>
         </button>
-      </main>
+      </motion.main>
       <Footer />
     </div>
   );

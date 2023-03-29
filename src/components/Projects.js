@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import "../Projects.css";
 import Loading from './Loading'
+import { motion } from 'framer-motion';
 
 export default function Project() {
   return (
@@ -67,7 +68,12 @@ export default function Project() {
         </nav>
       </nav>
       <Suspense fallback={<Loading/>}>
-        <div className="">
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.7 }}
+        className="">
           <Carousel
             sx={{ maxWidth: 1080, marginTop:22 }}
             mx="auto"
@@ -347,7 +353,7 @@ export default function Project() {
             </Carousel.Slide>
           </Carousel>
           <Footer/>
-        </div>
+        </motion.div>
       </Suspense>
     </ MantineProvider>
   );

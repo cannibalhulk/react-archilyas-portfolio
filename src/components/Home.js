@@ -4,11 +4,17 @@ import {Link} from 'react-router-dom'
 import logo from '../archilyas-logo.png'
 import '../Home.css'
 import  '../gsap/gsap.animate.js'
+import { motion } from 'framer-motion';
+
 
 
 export default function Home(){
     return(
-        <div>
+        <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}>
             <Navbar/>
             <main>
                 <div id="welcome" className="welcome">
@@ -69,7 +75,7 @@ export default function Home(){
                 </section>
             </main>
             <Footer/>
-        </div>
+        </motion.div>
     )
     
 }
