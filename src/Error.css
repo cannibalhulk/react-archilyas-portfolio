@@ -8,13 +8,10 @@
 }
 
 .error{
-    width: 125px;
+    width: 95px;
 }
 
 @media (min-width:300px) and (max-width:600px) {
-    h1.message{
-        font-size: 27px;
-    }
 
     .error{
         width: 80px;
@@ -22,7 +19,7 @@
 }
 
 .container h1{
-    font-size: 50px;
+    font-size: 27px;
     font-family: 'Open Sans',sans-serif;
 
 }
