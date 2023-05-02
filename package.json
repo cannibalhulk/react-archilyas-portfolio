@@ -12,6 +12,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "boxicons": "^2.1.4",
     "embla-carousel-react": "^7.0.5",
     "framer-motion": "^10.10.0",
     "gsap": "^3.11.3",

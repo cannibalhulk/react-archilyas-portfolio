@@ -1,0 +1,28 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.error{
+    width: 125px;
+}
+
+@media (min-width:300px) and (max-width:600px) {
+    h1.message{
+        font-size: 27px;
+    }
+
+    .error{
+        width: 80px;
+    }
+}
+
+.container h1{
+    font-size: 50px;
+    font-family: 'Open Sans',sans-serif;
+
+}
