@@ -10,6 +10,7 @@
 For animations:
 
 - GSAP animation library
+- [Framer Motion](https://www.framer.com/motion/)
 
 For icons:
 
