@@ -4,8 +4,50 @@ import { MantineProvider } from "@mantine/core";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import "../Projects.css";
-import Loading from './Loading'
 import { motion } from 'framer-motion';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import Loading from "./Loading";
+import Logo from "../archilyas-logo.png"
+import img1 from "../images/villa-1/hazir-2.jpg"
+import img2 from "../images/villa-1/hazir3.jpg"
+import img3 from "../images/villa-1/hazir-render2.jpg"
+import img4 from "../images/villa-1/hazir-render4.jpg"
+
+import hm1 from "../images/hamam-otagi/bath-hazir-1.jpg"
+import hm2 from "../images/hamam-otagi/bath-hazir-2.jpg"
+import hm3 from "../images/hamam-otagi/hazir-1.jpg"
+import hm4 from "../images/hamam-otagi/render1.jpg"
+
+import sf1 from "../images/sifaris-hamam/hazir-hamam.jpg"
+import sf2 from "../images/sifaris-hamam/hazir2.jpg"
+
+import yt1 from "../images/sifaris-yataq-otagi/hazir.jpg"
+import yt2 from "../images/sifaris-yataq-otagi/hazir4.jpg"
+
+import it1 from "../images/sifarisler-interyer-2/hazir-render 2.jpg"
+import it2 from "../images/sifarisler-interyer-2/hazir-render 3.jpg"
+import it3 from "../images/sifarisler-interyer-2/hazir-render.jpg"
+import it4 from "../images/sifarisler-interyer-2/hazir-render1.jpg"
+import it5 from "../images/sifarisler-interyer-2/haziriliq 2.jpg"
+
+import iy1 from "../images/sifarisler-interyer-3/foto1.jpg"
+import iy2 from "../images/sifarisler-interyer-3/foto2.jpg"
+import iy3 from "../images/sifarisler-interyer-3/foto3.jpg"
+import iy4 from "../images/sifarisler-interyer-3/foto4.jpg"
+import iy5 from "../images/sifarisler-interyer-3/foto5.jpg"
+import iy6 from "../images/sifarisler-interyer-3/foto6.jpg"
+import iy7 from "../images/sifarisler-interyer-3/foto7.jpg"
+
+import tr1 from "../images/interyer-3-temir-prosesi/1.jpeg"
+import tr2 from "../images/interyer-3-temir-prosesi/2.jpeg"
+import tr3 from "../images/interyer-3-temir-prosesi/3.jpeg"
+
+import e1 from "../images/yataq-otagi-interyer/hazir343.jpg"
+import e2 from "../images/yataq-otagi-interyer/hazr.jpg"
+import e3 from "../images/yataq-otagi-interyer/yataq-otagi-hazir-2.jpg"
+import e4 from "../images/yataq-otagi-interyer/yataq-otagi-hazir2.jpg"
+
+
 
 export default function Project() {
   return (
@@ -31,7 +73,7 @@ export default function Project() {
         </button>
         <Link to="/">
           <a>
-            <img src={require("../archilyas-logo.png")} alt="logo" />
+            <img src={Logo} alt="logo" />
           </a>
         </Link>
 
@@ -94,16 +136,16 @@ export default function Project() {
             }}
             >
             <Carousel.Slide className="p">
-              <img src={require("../images/villa-1/hazir-2.jpg")} alt="img" />
+              <LazyLoadImage src={img1} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide>
-              <img src={require("../images/villa-1/hazir3.jpg")} alt="img" />
+              <LazyLoadImage src={img2} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide>
-              <img src={require("../images/villa-1/hazir-render2.jpg")} alt="img" />
+              <LazyLoadImage src={img3} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide>
-              <img src={require("../images/villa-1/hazir-render4.jpg")} alt="img" />
+              <LazyLoadImage src={img4} alt="img" />
             </Carousel.Slide>
             {/* ...other slides */}
           </Carousel>
@@ -130,16 +172,16 @@ export default function Project() {
             }}
             >
             <Carousel.Slide className="p">
-              <img src={require("../images/hamam-otagi/bath-hazir-1.jpg")} alt="img" />
+              <LazyLoadImage src={hm1} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide>
-              <img src={require("../images/hamam-otagi/bath-hazir-2.jpg")} alt="img" />
+              <LazyLoadImage src={hm2} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide>
-              <img src={require("../images/hamam-otagi/hazir-1.jpg")} alt="img" />
+              <LazyLoadImage src={hm3} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide>
-              <img src={require("../images/hamam-otagi/render1.jpg")} alt="img" />
+              <LazyLoadImage src={hm4} alt="img" />
             </Carousel.Slide>
             {/* ...other slides */}
           </Carousel>
@@ -166,10 +208,10 @@ export default function Project() {
             }}
             >
             <Carousel.Slide className="p">
-              <img src={require("../images/sifaris-hamam/hazir-hamam.jpg")} alt="img" />
+              <LazyLoadImage src={sf1} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide>
-              <img src={require("../images/sifaris-hamam/hazir2.jpg")} alt="img" />
+              <LazyLoadImage src={sf2} alt="img" />
             </Carousel.Slide>
             {/* ...other slides */}
           </Carousel>
@@ -196,10 +238,10 @@ export default function Project() {
             }}
             >
             <Carousel.Slide className="p">
-              <img src={require("../images/sifaris-yataq-otagi/hazir.jpg")} alt="img" />
+              <LazyLoadImage src={yt1} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide>
-              <img src={require("../images/sifaris-yataq-otagi/hazir4.jpg")} alt="img" />
+              <LazyLoadImage src={yt2} alt="img" />
             </Carousel.Slide>
             {/* ...other slides */}
           </Carousel>
@@ -226,19 +268,19 @@ export default function Project() {
             }}
             >
             <Carousel.Slide className="p">
-              <img src={require("../images/sifarisler-interyer-2/hazir-render 2.jpg")} alt="img" />
+              <LazyLoadImage src={it1} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide>
-              <img src={require("../images/sifarisler-interyer-2/hazir-render 3.jpg")} alt="img" />
+              <LazyLoadImage src={it2} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide>
-              <img src={require("../images/sifarisler-interyer-2/hazir-render.jpg")} alt="img" />
+              <LazyLoadImage src={it3} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide>
-              <img src={require("../images/sifarisler-interyer-2/hazir-render1.jpg")} alt="img" />
+              <LazyLoadImage src={it4} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide>
-              <img src={require("../images/sifarisler-interyer-2/haziriliq 2.jpg")} alt="img" />
+              <LazyLoadImage src={it5} alt="img" />
             </Carousel.Slide>
           </Carousel>
           <br/>
@@ -264,57 +306,25 @@ export default function Project() {
             }}
             >
             <Carousel.Slide className="p">
-              <img src={require("../images/sifarisler-interyer-3/foto1.jpg")} alt="img" />
+              <LazyLoadImage src={iy1} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide className="p">
-              <img src={require("../images/sifarisler-interyer-3/foto2.jpg")} alt="img" />
+              <LazyLoadImage src={iy2} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide className="p">
-              <img src={require("../images/sifarisler-interyer-3/foto3.jpg")} alt="img" />
+              <LazyLoadImage src={iy3} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide className="p">
-              <img src={require("../images/sifarisler-interyer-3/foto4.jpg")} alt="img" />
+              <LazyLoadImage src={iy4} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide className="p">
-              <img src={require("../images/sifarisler-interyer-3/foto5.jpg")} alt="img" />
+              <LazyLoadImage src={iy5} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide className="p">
-              <img src={require("../images/sifarisler-interyer-3/foto6.jpg")} alt="img" />
+              <LazyLoadImage src={iy6} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide className="p">
-              <img src={require("../images/sifarisler-interyer-3/foto7.jpg")} alt="img" />
-            </Carousel.Slide>
-          </Carousel>
-          <br/>
-          <br/>
-          <br/>
-          <Carousel
-            sx={{ maxWidth: 1080, marginTop:22 }}
-            mx="auto"
-            radius="sm"
-            withIndicators
-            height={"auto"}
-            width={"auto"}
-            styles={{
-              indicator: {
-                width: 12,
-                height: 4,
-                transition: "width 250ms ease",
-                
-                "&[data-active]": {
-                  width: 70,
-                },
-              },
-            }}
-            >
-            <Carousel.Slide className="p">
-              <img src={require("../images/interyer-3-temir-prosesi/1.jpeg")} alt="img" />
-            </Carousel.Slide>
-            <Carousel.Slide className="p">
-              <img src={require("../images/interyer-3-temir-prosesi/2.jpeg")} alt="img" />
-            </Carousel.Slide>
-            <Carousel.Slide className="p">
-              <img src={require("../images/interyer-3-temir-prosesi/3.jpeg")} alt="img" />
+              <LazyLoadImage src={iy7} alt="img" />
             </Carousel.Slide>
           </Carousel>
           <br/>
@@ -340,16 +350,48 @@ export default function Project() {
             }}
             >
             <Carousel.Slide className="p">
-              <img src={require("../images/yataq-otagi-interyer/hazir343.jpg")} alt="img" />
+              <LazyLoadImage src={tr1} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide className="p">
-              <img src={require("../images/yataq-otagi-interyer/hazr.jpg")} alt="img" />
+              <LazyLoadImage src={tr2} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide className="p">
-              <img src={require("../images/yataq-otagi-interyer/yataq-otagi-hazir-2.jpg")} alt="img" />
+              <LazyLoadImage src={tr3} alt="img" />
+            </Carousel.Slide>
+          </Carousel>
+          <br/>
+          <br/>
+          <br/>
+          <Carousel
+            sx={{ maxWidth: 1080, marginTop:22 }}
+            mx="auto"
+            radius="sm"
+            withIndicators
+            height={"auto"}
+            width={"auto"}
+            styles={{
+              indicator: {
+                width: 12,
+                height: 4,
+                transition: "width 250ms ease",
+                
+                "&[data-active]": {
+                  width: 70,
+                },
+              },
+            }}
+            >
+            <Carousel.Slide className="p">
+              <LazyLoadImage src={e1} alt="img" />
             </Carousel.Slide>
             <Carousel.Slide className="p">
-              <img src={require("../images/yataq-otagi-interyer/yataq-otagi-hazir2.jpg")} alt="img" />
+              <LazyLoadImage src={e2} alt="img" />
+            </Carousel.Slide>
+            <Carousel.Slide className="p">
+              <LazyLoadImage src={e3} alt="img" />
+            </Carousel.Slide>
+            <Carousel.Slide className="p">
+              <LazyLoadImage src={e4} alt="img" />
             </Carousel.Slide>
           </Carousel>
           <Footer/>

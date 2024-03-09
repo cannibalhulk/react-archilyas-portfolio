@@ -1,7 +1,9 @@
-import Footer from "../components/Footer";
+import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import "../Contact.css";
 import { motion } from 'framer-motion';
+import Logo from "../archilyas-logo.png"
+
 
 export default function Contact() {
   return (
@@ -27,7 +29,7 @@ export default function Contact() {
         </button>
         <Link to="/">
           <a>
-            <img src={require("../archilyas-logo.png")} alt="logo" />
+            <img src={Logo} alt="logo" />
           </a>
         </Link>
 

@@ -1,12 +1,13 @@
 import {Link } from "react-router-dom";
 import '../Footer.css';
+import Logo from "../archilyas-logo.png"
 
 export default function Footer(){
     return(
         <div>
             <footer>
                 <div className="logo-socials">
-                    <img src={require("../archilyas-logo.png")} alt="logo"/>
+                    <img src={Logo} alt="logo"/>
                     <div className="socials">
                         <a><i className="fa-brands fa-square-behance"></i></a>
                         <a href="https://www.instagram.com/ilysmmdli/"><i className="fa-brands fa-instagram"></i></a>

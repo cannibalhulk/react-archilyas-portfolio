@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../Blog.css";
+import Logo from "../archilyas-logo.png"
 
 export default function Blog() {
   const [blogData, setBlog] = useState(null);
@@ -48,7 +49,7 @@ let PROJECT_URL = `https://wt0rn5to.api.sanity.io/v2021-10-21/data/query/product
         </button>
         <Link to="/">
           <a>
-            <img src={require("../archilyas-logo.png")} alt="logo" />
+            <img src={Logo} alt="logo" />
           </a>
         </Link>
 

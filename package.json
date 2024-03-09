@@ -2,6 +2,7 @@
   "name": "react-archilyas-portf",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@mantine/carousel": "^5.9.4",
@@ -18,15 +19,15 @@
     "gsap": "^3.11.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-lazy-load-image-component": "^1.6.0",
     "react-router-dom": "^6.4.5",
-    "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "set PORT=3003 && react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev":   "vite dev",
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +48,10 @@
     ]
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.1.5",
+    "vite-plugin-svgr": "^4.2.0",
+    "vite-tsconfig-paths": "^4.3.1",
     "webpack": "^5.78.0"
   }
 }

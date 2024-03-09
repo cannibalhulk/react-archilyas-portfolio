@@ -1,6 +1,7 @@
 import {Link } from "react-router-dom";
 import '../Navbar.css';
 import '../scrollnavbar.js'
+import Logo from "../archilyas-logo.png"
 
 
 export default function Navbar() {
@@ -19,7 +20,7 @@ export default function Navbar() {
       </button>
       <Link to="/">
         <a>
-            <img src={require("../archilyas-logo.png")} alt="logo" />
+            <img src={Logo} alt="logo" />
         </a>
       </Link>
       
