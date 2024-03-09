@@ -54,7 +54,7 @@ export default function Footer(){
                 </div>
             </footer>
             <div className="credit">
-                <p>Copyright &copy; 2022-2023 Archilyas.com <br/><span>Made by <a target="_blank" rel="noreferrer"  href="https://shukurdev.vercel.pro">Shukur Huseynli</a></span></p>
+                <p>Copyright &copy; 2022-2023 Archilyas.com <br/><span>Made by <a target="_blank" rel="noreferrer"  href="https://shukurdev.vercel.app">Shukur Huseynli</a></span></p>
             </div>
         </div>
     );
