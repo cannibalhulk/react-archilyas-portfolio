@@ -55,7 +55,7 @@ export default function Home(){
                     <h1>Haqqımda</h1>
                     <div className="about-div">
                         <img src={require("../ilyas.png")} alt="ilyas"/>
-                        <div className="about-text">Salam, mən <b><i>Azərbaycan Memarlıq İnşaat Universitetinin</i></b> 3-cü kurs tələbəsi, <u>İlyas Məmmədli</u>. İlk illərimdə dizayn kurslarını sertifikatla bitirərək bu işə atılmışam. Dəfələrlə sifariş layihələri götürüb müştərinin zövqü və istəklərinə uyğun dizaynı başa çatdırmışam.</div>
+                        <div className="about-text">Salam, mən <b><i>Azərbaycan Memarlıq İnşaat Universitetinin</i></b> 4-cü kurs tələbəsi, <u>İlyas Məmmədli</u>. İlk illərimdə dizayn kurslarını sertifikatla bitirərək bu işə atılmışam. Dəfələrlə sifariş layihələri götürüb müştərinin zövqü və istəklərinə uyğun dizaynı başa çatdırmışam.</div>
                     </div>
                 </section>
                 <section id="proyektlerim">
