@@ -536,6 +536,7 @@ a{
   }
   
   .more-btn{
+      color: #343535;
       margin-top: 34px;
       display: flex;
       justify-content: center;
@@ -545,14 +546,14 @@ a{
       font-size: 22px;
       width: 180px;
       height: 60px;
-      background-color: #494B4B;
+      background-color: rgb(202, 164, 61);
       border-radius: 13px;
       transition: 0.1s ease-in;
   }
   
   .more-btn:hover{
       cursor: pointer;
-      box-shadow: 3px 4px 55px 3px rgb(49, 49, 49);
+      box-shadow: 3px 4px 55px 3px rgb(64, 50, 14);
   }
   
   @media screen and (max-width:768px){

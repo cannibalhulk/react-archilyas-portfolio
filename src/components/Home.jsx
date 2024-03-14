@@ -73,9 +73,7 @@ export default function Home(){
                         <div className="more-div">9+</div>
                     </div>
                     <Link to="/layiheler">
-                        <a>
-                            <div className="more-btn">Daha çox</div>
-                        </a>
+                        <div className="more-btn">Daha çox</div>
                     </Link>
                 </section>
             </main>
