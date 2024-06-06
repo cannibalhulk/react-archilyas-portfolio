@@ -8,10 +8,10 @@ import { motion } from 'framer-motion';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Loading from "./Loading";
 import Logo from "../archilyas-logo.png"
-import img1 from "../images/villa-1/hazir-2.jpg"
-import img2 from "../images/villa-1/hazir3.jpg"
-import img3 from "../images/villa-1/hazir-render2.jpg"
-import img4 from "../images/villa-1/hazir-render4.jpg"
+import img1 from "../images/villa-1/hazir-2.webp"
+import img2 from "../images/villa-1/hazir3.webp"
+import img3 from "../images/villa-1/hazir-render2.webp"
+import img4 from "../images/villa-1/hazir-render4.webp"
 
 import hm1 from "../images/hamam-otagi/bath-hazir-1.jpg"
 import hm2 from "../images/hamam-otagi/bath-hazir-2.jpg"
